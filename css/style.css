@@ -338,6 +338,13 @@ section { padding: 72px 0; }
   background: var(--bg);
 }
 .widget-mount strong { color: var(--navy-800); display: block; margin-bottom: 6px; font-family: var(--font-head); letter-spacing: 0.03em; text-transform: uppercase; }
+.tuttocampo-embed {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+}
+.tuttocampo-embed iframe { max-width: 100%; }
+
 .widget-mount code {
   display: inline-block;
   margin-top: 10px;

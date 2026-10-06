@@ -30,7 +30,7 @@
 
 <section class="page-header">
   <div class="container">
-    <div class="kicker">Terza Categoria · Girone B · Calabria</div>
+    <div class="kicker">Terza Categoria · Girone B · Cosenza · Calabria</div>
     <h1>Calendario &amp; Classifica</h1>
     <p>Dati aggiornati automaticamente tramite il widget gratuito di Tuttocampo.it.</p>
   </div>
@@ -41,58 +41,41 @@
     <div class="widget-card">
       <div class="widget-tabs">
         <button class="active" data-target="panel-classifica">Classifica</button>
-        <button data-target="panel-calendario">Calendario</button>
+        <button data-target="panel-prossima">Prossima partita</button>
         <button data-target="panel-risultati">Risultati</button>
+        <button data-target="panel-ultima">Ultima partita</button>
+        <button data-target="panel-marcatori">Marcatori</button>
       </div>
+
+      <!-- Widget ufficiali Tuttocampo — Calabria, Terza Categoria, Cosenza, Girone B -->
 
       <div class="widget-panel active" id="panel-classifica">
-        <!--
-          ====================================================================
-          PUNTO DI AGGANCIO WIDGET TUTTOCAMPO — CLASSIFICA
-          1) Andare su https://www.tuttocampo.it/WidgetApi
-          2) Selezionare: Regione = Calabria, Categoria = Terza Categoria,
-             Girone = quello del Sant'Angelo D'Acri, Tipo = Classifica
-          3) Cliccare "Genera Widget" e incollare qui sotto il codice
-             (tipicamente un <iframe src="https://widget.tuttocampo.it/...">)
-             al posto del blocco .widget-mount
-          ====================================================================
-        -->
-        <div class="widget-mount">
-          <strong>Anteprima — qui comparirà la classifica live di Tuttocampo</strong>
-          Sostituire questo blocco con l'iframe generato su tuttocampo.it/WidgetApi
-          <br><code>&lt;!-- TUTTOCAMPO_WIDGET_CLASSIFICA --&gt;</code>
+        <div class="tuttocampo-embed">
+          <iframe src='https://www.tuttocampo.it/WidgetV2/Classifica/750acbe1-17b8-4113-8e07-664e48acb25f' width='500' height='800' scrolling='no' frameborder='0' loading='lazy'></iframe>
         </div>
-
-        <!-- Tabella di scorta, utile finché il widget non è configurato -->
-        <p class="placeholder-tag" style="margin-top:20px;">Esempio statico — dati non reali</p>
-        <table class="classifica">
-          <thead>
-            <tr><th>#</th><th>Squadra</th><th>Pt</th><th>G</th><th>V</th><th>N</th><th>P</th><th>GF</th><th>GS</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>1</td><td>Squadra Esempio A</td><td>44</td><td>18</td><td>14</td><td>2</td><td>2</td><td>50</td><td>15</td></tr>
-            <tr><td>2</td><td>Squadra Esempio B</td><td>40</td><td>18</td><td>12</td><td>4</td><td>2</td><td>42</td><td>20</td></tr>
-            <tr class="highlight"><td>3</td><td>Sant'Angelo D'Acri</td><td>34</td><td>18</td><td>10</td><td>4</td><td>4</td><td>26</td><td>26</td></tr>
-            <tr><td>4</td><td>Squadra Esempio C</td><td>30</td><td>18</td><td>8</td><td>6</td><td>4</td><td>30</td><td>24</td></tr>
-          </tbody>
-        </table>
       </div>
 
-      <div class="widget-panel" id="panel-calendario">
-        <!-- PUNTO DI AGGANCIO WIDGET TUTTOCAMPO — CALENDARIO (stessa procedura, Tipo = Calendario) -->
-        <div class="widget-mount">
-          <strong>Anteprima — qui comparirà il calendario live di Tuttocampo</strong>
-          Sostituire questo blocco con l'iframe generato su tuttocampo.it/WidgetApi
-          <br><code>&lt;!-- TUTTOCAMPO_WIDGET_CALENDARIO --&gt;</code>
+      <div class="widget-panel" id="panel-prossima">
+        <div class="tuttocampo-embed">
+          <iframe src='https://www.tuttocampo.it/WidgetV2/ProssimaPartita/750acbe1-17b8-4113-8e07-664e48acb25f' width='500' height='350' scrolling='no' frameborder='0' loading='lazy'></iframe>
         </div>
       </div>
 
       <div class="widget-panel" id="panel-risultati">
-        <!-- PUNTO DI AGGANCIO WIDGET TUTTOCAMPO — RISULTATI (stessa procedura, Tipo = Risultati) -->
-        <div class="widget-mount">
-          <strong>Anteprima — qui comparirà l'ultimo risultato live di Tuttocampo</strong>
-          Sostituire questo blocco con l'iframe generato su tuttocampo.it/WidgetApi
-          <br><code>&lt;!-- TUTTOCAMPO_WIDGET_RISULTATI --&gt;</code>
+        <div class="tuttocampo-embed">
+          <iframe src='https://www.tuttocampo.it/WidgetV2/Risultati/750acbe1-17b8-4113-8e07-664e48acb25f' width='500' height='600' scrolling='no' frameborder='0' loading='lazy'></iframe>
+        </div>
+      </div>
+
+      <div class="widget-panel" id="panel-ultima">
+        <div class="tuttocampo-embed">
+          <iframe src='https://www.tuttocampo.it/WidgetV2/Partita/750acbe1-17b8-4113-8e07-664e48acb25f' width='500' height='350' scrolling='no' frameborder='0' loading='lazy'></iframe>
+        </div>
+      </div>
+
+      <div class="widget-panel" id="panel-marcatori">
+        <div class="tuttocampo-embed">
+          <iframe src='https://www.tuttocampo.it/WidgetV2/Marcatori/750acbe1-17b8-4113-8e07-664e48acb25f' width='500' height='700' scrolling='no' frameborder='0' loading='lazy'></iframe>
         </div>
       </div>
     </div>

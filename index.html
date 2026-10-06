@@ -31,7 +31,7 @@
 
 <section class="hero">
   <div class="hero-inner">
-    <div class="hero-kicker">Terza Categoria · Girone B · Calabria</div>
+    <div class="hero-kicker">Terza Categoria · Girone B · Cosenza · Calabria</div>
     <h1>A.S.D. Sant'Angelo D'Acri</h1>
     <p class="lede">Il sito ufficiale della squadra: notizie, calendario, classifica e tutto quello che succede dentro e fuori dal campo.</p>
   </div>
@@ -80,27 +80,16 @@
     <div class="widget-card">
       <div class="widget-tabs">
         <button class="active" data-target="panel-classifica-home">Classifica</button>
-        <button data-target="panel-calendario-home">Prossime gare</button>
+        <button data-target="panel-calendario-home">Prossima partita</button>
       </div>
       <div class="widget-panel active" id="panel-classifica-home">
-        <!--
-          QUI va incollato il widget "Classifica" generato su:
-          https://www.tuttocampo.it/WidgetApi
-          Selezionare: Calabria > Terza Categoria > girone del Sant'Angelo D'Acri > Classifica
-          Il codice è tipicamente un <iframe src="https://widget.tuttocampo.it/..."></iframe>
-        -->
-        <div class="widget-mount">
-          <strong>Anteprima — qui comparirà la classifica live</strong>
-          Incolla qui il widget "Classifica" generato su tuttocampo.it/WidgetApi
-          <br><code>&lt;!-- TUTTOCAMPO_WIDGET_CLASSIFICA --&gt;</code>
+        <div class="tuttocampo-embed">
+          <iframe src='https://www.tuttocampo.it/WidgetV2/Classifica/750acbe1-17b8-4113-8e07-664e48acb25f' width='500' height='800' scrolling='no' frameborder='0' loading='lazy'></iframe>
         </div>
       </div>
       <div class="widget-panel" id="panel-calendario-home">
-        <!-- QUI il widget "Calendario/Risultati" di Tuttocampo -->
-        <div class="widget-mount">
-          <strong>Anteprima — qui comparirà il calendario live</strong>
-          Incolla qui il widget "Calendario" generato su tuttocampo.it/WidgetApi
-          <br><code>&lt;!-- TUTTOCAMPO_WIDGET_CALENDARIO --&gt;</code>
+        <div class="tuttocampo-embed">
+          <iframe src='https://www.tuttocampo.it/WidgetV2/ProssimaPartita/750acbe1-17b8-4113-8e07-664e48acb25f' width='500' height='350' scrolling='no' frameborder='0' loading='lazy'></iframe>
         </div>
       </div>
     </div>
@@ -136,7 +125,7 @@
           <img src="assets/stemma.svg" alt="" class="crest">
           <strong>Sant'Angelo D'Acri</strong>
         </div>
-        <p style="font-size:0.88rem;">Sito ufficiale dell'A.S.D. Sant'Angelo D'Acri — Terza Categoria, Girone B, Calabria.</p>
+        <p style="font-size:0.88rem;">Sito ufficiale dell'A.S.D. Sant'Angelo D'Acri — Terza Categoria, Girone B, Cosenza, Calabria.</p>
         <div class="social-row">
           <a href="#" aria-label="Facebook">f</a>
           <a href="#" aria-label="Instagram">ig</a>
