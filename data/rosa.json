@@ -1,0 +1,11 @@
+{
+  "giocatori": [
+    { "numero": "1", "nome": "Nome Cognome", "ruolo": "Portiere" },
+    { "numero": "4", "nome": "Nome Cognome", "ruolo": "Difensore" },
+    { "numero": "5", "nome": "Nome Cognome", "ruolo": "Difensore" },
+    { "numero": "8", "nome": "Nome Cognome", "ruolo": "Centrocampista" },
+    { "numero": "10", "nome": "Nome Cognome", "ruolo": "Centrocampista" },
+    { "numero": "9", "nome": "Nome Cognome", "ruolo": "Attaccante" },
+    { "numero": "11", "nome": "Nome Cognome", "ruolo": "Attaccante" }
+  ]
+}

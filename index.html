@@ -46,11 +46,11 @@
     </div>
     <div class="match-meta">
       <div class="vs">VS</div>
-      <div class="when">Domenica · ore 15:30<br>Stadio Comunale</div>
+      <div class="when" id="match-when">Domenica · ore 15:30<br>Stadio Comunale</div>
     </div>
     <div class="match-team away">
       <div class="match-badge">?</div>
-      <h3>Avversario</h3>
+      <h3 id="match-avversario">Avversario</h3>
     </div>
   </div>
 </div>
@@ -64,35 +64,7 @@
       </div>
       <a href="notizie.html" class="btn">Tutte le notizie</a>
     </div>
-    <div class="news-grid">
-      <article class="news-card">
-        <div class="news-thumb"><span class="placeholder-tag">Esempio</span></div>
-        <div class="news-body">
-          <div class="news-date">Da aggiornare</div>
-          <h3>Online il nuovo sito ufficiale</h3>
-          <p>Testo di esempio: qui andrà l'anteprima della notizia scritta dal social media manager.</p>
-          <a href="notizie.html" class="news-link">Leggi di più →</a>
-        </div>
-      </article>
-      <article class="news-card">
-        <div class="news-thumb"><span class="placeholder-tag">Esempio</span></div>
-        <div class="news-body">
-          <div class="news-date">Da aggiornare</div>
-          <h3>Aperte le iscrizioni 2025-26</h3>
-          <p>Testo di esempio: dettagli su modalità e scadenze per la nuova stagione.</p>
-          <a href="notizie.html" class="news-link">Leggi di più →</a>
-        </div>
-      </article>
-      <article class="news-card">
-        <div class="news-thumb"><span class="placeholder-tag">Esempio</span></div>
-        <div class="news-body">
-          <div class="news-date">Da aggiornare</div>
-          <h3>Risultato dell'ultima giornata</h3>
-          <p>Testo di esempio: cronaca e pagelle della partita più recente.</p>
-          <a href="notizie.html" class="news-link">Leggi di più →</a>
-        </div>
-      </article>
-    </div>
+    <div class="news-grid" id="home-news-grid"></div>
   </div>
 </section>
 
@@ -152,13 +124,7 @@
     <div class="section-head">
       <div><div class="kicker">Grazie a chi ci sostiene</div><h2>I nostri sponsor</h2></div>
     </div>
-    <div class="sponsor-strip">
-      <div class="sponsor-slot">LOGO SPONSOR</div>
-      <div class="sponsor-slot">LOGO SPONSOR</div>
-      <div class="sponsor-slot">LOGO SPONSOR</div>
-      <div class="sponsor-slot">LOGO SPONSOR</div>
-      <div class="sponsor-slot">LOGO SPONSOR</div>
-    </div>
+    <div class="sponsor-strip" data-sponsor-strip></div>
   </div>
 </section>
 
@@ -194,7 +160,7 @@
       </div>
       <div>
         <h4>Contatti</h4>
-        <ul>
+        <ul id="footer-contatti-list">
           <li>Sede: da aggiornare</li>
           <li>Tel: da aggiornare</li>
           <li>Email: da aggiornare</li>
@@ -209,5 +175,6 @@
 </footer>
 
 <script src="js/main.js"></script>
+<script src="js/content.js"></script>
 </body>
 </html>

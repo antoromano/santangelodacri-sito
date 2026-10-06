@@ -1,0 +1,102 @@
+backend:
+  name: github
+  repo: asd-santangelodacri/santangelodacri-sito
+  branch: main
+  # base_url: punta al Cloudflare Worker di autenticazione (sveltia-cms-auth).
+  # Lasciato vuoto finché il worker non è stato distribuito: senza questa riga
+  # il pannello di login su /admin non funziona ancora.
+  # base_url: "https://sveltia-cms-auth.<TUO-SUBDOMAIN>.workers.dev"
+
+media_folder: "assets/uploads"
+public_folder: "assets/uploads"
+
+locale: "it"
+
+collections:
+  - name: "notizie"
+    label: "Notizie"
+    files:
+      - name: "notizie"
+        label: "Elenco notizie"
+        file: "data/notizie.json"
+        fields:
+          - label: "Notizie (la più recente in cima)"
+            name: "items"
+            widget: "list"
+            summary: "{{title}}"
+            fields:
+              - { label: "Titolo", name: "title", widget: "string" }
+              - { label: "Data", name: "date", widget: "string", hint: "Es. 12 ottobre 2025" }
+              - { label: "Testo", name: "excerpt", widget: "text" }
+              - { label: "Immagine", name: "image", widget: "image", required: false }
+
+  - name: "prossima_gara"
+    label: "Prossima gara"
+    files:
+      - name: "prossima_gara"
+        label: "Prossima gara"
+        file: "data/prossima-gara.json"
+        fields:
+          - { label: "Squadra avversaria", name: "avversario", widget: "string" }
+          - { label: "Giorno", name: "data", widget: "string", hint: "Es. Domenica 12 ottobre" }
+          - { label: "Ora", name: "ora", widget: "string", hint: "Es. 15:30" }
+          - { label: "Luogo", name: "luogo", widget: "string" }
+
+  - name: "rosa"
+    label: "Rosa"
+    files:
+      - name: "rosa"
+        label: "Giocatori"
+        file: "data/rosa.json"
+        fields:
+          - label: "Giocatori"
+            name: "giocatori"
+            widget: "list"
+            summary: "{{numero}} — {{nome}} ({{ruolo}})"
+            fields:
+              - { label: "Numero maglia", name: "numero", widget: "string" }
+              - { label: "Nome e cognome", name: "nome", widget: "string" }
+              - { label: "Ruolo", name: "ruolo", widget: "select", options: ["Portiere", "Difensore", "Centrocampista", "Attaccante"] }
+
+  - name: "staff"
+    label: "Staff tecnico"
+    files:
+      - name: "staff"
+        label: "Staff"
+        file: "data/staff.json"
+        fields:
+          - label: "Membri dello staff"
+            name: "membri"
+            widget: "list"
+            summary: "{{nome}} — {{ruolo}}"
+            fields:
+              - { label: "Nome e cognome", name: "nome", widget: "string" }
+              - { label: "Ruolo", name: "ruolo", widget: "string" }
+
+  - name: "sponsor"
+    label: "Sponsor"
+    files:
+      - name: "sponsor"
+        label: "Sponsor"
+        file: "data/sponsor.json"
+        fields:
+          - label: "Sponsor"
+            name: "items"
+            widget: "list"
+            summary: "{{nome}}"
+            fields:
+              - { label: "Nome sponsor", name: "nome", widget: "string" }
+              - { label: "Logo", name: "logo", widget: "image", required: false }
+
+  - name: "contatti"
+    label: "Contatti"
+    files:
+      - name: "contatti"
+        label: "Contatti società"
+        file: "data/contatti.json"
+        fields:
+          - { label: "Sede", name: "sede", widget: "string" }
+          - { label: "Telefono", name: "telefono", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Link Facebook", name: "facebook", widget: "string", required: false }
+          - { label: "Link Instagram", name: "instagram", widget: "string", required: false }

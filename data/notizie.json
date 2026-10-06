@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "title": "Online il nuovo sito ufficiale",
+      "date": "Da aggiornare",
+      "excerpt": "Testo di esempio: qui andrà l'anteprima della notizia scritta dal social media manager.",
+      "image": ""
+    },
+    {
+      "title": "Aperte le iscrizioni 2025-26",
+      "date": "Da aggiornare",
+      "excerpt": "Testo di esempio: dettagli su modalità e scadenze per la nuova stagione.",
+      "image": ""
+    },
+    {
+      "title": "Risultato dell'ultima giornata",
+      "date": "Da aggiornare",
+      "excerpt": "Testo di esempio: cronaca e pagelle della partita più recente.",
+      "image": ""
+    },
+    {
+      "title": "Nuovo arrivo in rosa",
+      "date": "Da aggiornare",
+      "excerpt": "Testo di esempio: annuncio di un nuovo tesseramento.",
+      "image": ""
+    },
+    {
+      "title": "Intervista al mister",
+      "date": "Da aggiornare",
+      "excerpt": "Testo di esempio: due parole sulla preparazione della prossima gara.",
+      "image": ""
+    },
+    {
+      "title": "Grazie ai nostri sponsor",
+      "date": "Da aggiornare",
+      "excerpt": "Testo di esempio: ringraziamento pubblico agli sponsor della stagione.",
+      "image": ""
+    }
+  ]
+}
