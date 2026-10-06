@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A.S.D. Sant'Angelo D'Acri — Sito Ufficiale</title>
+<meta name="description" content="Sito ufficiale dell'A.S.D. Sant'Angelo D'Acri — Terza Categoria Calabria. Notizie, calendario, classifica, rosa e contatti.">
+<link rel="icon" href="assets/stemma.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <img src="assets/stemma.svg" alt="Stemma A.S.D. Sant'Angelo D'Acri" class="crest">
+      <span>Sant'Angelo D'Acri<small>A.S.D. — Terza Categoria</small></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="notizie.html">Notizie</a></li>
+      <li><a href="squadra.html">Squadra</a></li>
+      <li><a href="calendario.html">Calendario &amp; Classifica</a></li>
+      <li><a href="contatti.html">Contatti</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Apri menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-kicker">Terza Categoria · Girone B · Calabria</div>
+    <h1>A.S.D. Sant'Angelo D'Acri</h1>
+    <p class="lede">Il sito ufficiale della squadra: notizie, calendario, classifica e tutto quello che succede dentro e fuori dal campo.</p>
+  </div>
+</section>
+
+<div class="match-card">
+  <div class="match-card-inner">
+    <span class="placeholder-tag" style="grid-column:1/-1; justify-self:center;">Esempio — prossima gara da aggiornare</span>
+    <div class="match-team home">
+      <div class="match-badge">SA</div>
+      <h3>Sant'Angelo D'Acri</h3>
+    </div>
+    <div class="match-meta">
+      <div class="vs">VS</div>
+      <div class="when">Domenica · ore 15:30<br>Stadio Comunale</div>
+    </div>
+    <div class="match-team away">
+      <div class="match-badge">?</div>
+      <h3>Avversario</h3>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="kicker">Dalla società</div>
+        <h2>Ultime notizie</h2>
+      </div>
+      <a href="notizie.html" class="btn">Tutte le notizie</a>
+    </div>
+    <div class="news-grid">
+      <article class="news-card">
+        <div class="news-thumb"><span class="placeholder-tag">Esempio</span></div>
+        <div class="news-body">
+          <div class="news-date">Da aggiornare</div>
+          <h3>Online il nuovo sito ufficiale</h3>
+          <p>Testo di esempio: qui andrà l'anteprima della notizia scritta dal social media manager.</p>
+          <a href="notizie.html" class="news-link">Leggi di più →</a>
+        </div>
+      </article>
+      <article class="news-card">
+        <div class="news-thumb"><span class="placeholder-tag">Esempio</span></div>
+        <div class="news-body">
+          <div class="news-date">Da aggiornare</div>
+          <h3>Aperte le iscrizioni 2025-26</h3>
+          <p>Testo di esempio: dettagli su modalità e scadenze per la nuova stagione.</p>
+          <a href="notizie.html" class="news-link">Leggi di più →</a>
+        </div>
+      </article>
+      <article class="news-card">
+        <div class="news-thumb"><span class="placeholder-tag">Esempio</span></div>
+        <div class="news-body">
+          <div class="news-date">Da aggiornare</div>
+          <h3>Risultato dell'ultima giornata</h3>
+          <p>Testo di esempio: cronaca e pagelle della partita più recente.</p>
+          <a href="notizie.html" class="news-link">Leggi di più →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="kicker">Live da Tuttocampo</div>
+        <h2>Calendario &amp; Classifica</h2>
+      </div>
+      <a href="calendario.html" class="btn">Vedi tutto</a>
+    </div>
+    <div class="widget-card">
+      <div class="widget-tabs">
+        <button class="active" data-target="panel-classifica-home">Classifica</button>
+        <button data-target="panel-calendario-home">Prossime gare</button>
+      </div>
+      <div class="widget-panel active" id="panel-classifica-home">
+        <!--
+          QUI va incollato il widget "Classifica" generato su:
+          https://www.tuttocampo.it/WidgetApi
+          Selezionare: Calabria > Terza Categoria > girone del Sant'Angelo D'Acri > Classifica
+          Il codice è tipicamente un <iframe src="https://widget.tuttocampo.it/..."></iframe>
+        -->
+        <div class="widget-mount">
+          <strong>Anteprima — qui comparirà la classifica live</strong>
+          Incolla qui il widget "Classifica" generato su tuttocampo.it/WidgetApi
+          <br><code>&lt;!-- TUTTOCAMPO_WIDGET_CLASSIFICA --&gt;</code>
+        </div>
+      </div>
+      <div class="widget-panel" id="panel-calendario-home">
+        <!-- QUI il widget "Calendario/Risultati" di Tuttocampo -->
+        <div class="widget-mount">
+          <strong>Anteprima — qui comparirà il calendario live</strong>
+          Incolla qui il widget "Calendario" generato su tuttocampo.it/WidgetApi
+          <br><code>&lt;!-- TUTTOCAMPO_WIDGET_CALENDARIO --&gt;</code>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="container">
+    <div class="cta-banner">
+      <div>
+        <h2>Stagione 2025-26</h2>
+        <p>Sono aperte le iscrizioni per la prossima stagione. Scrivici per tutte le informazioni.</p>
+      </div>
+      <a href="contatti.html" class="btn">Iscriviti ora</a>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="kicker">Grazie a chi ci sostiene</div><h2>I nostri sponsor</h2></div>
+    </div>
+    <div class="sponsor-strip">
+      <div class="sponsor-slot">LOGO SPONSOR</div>
+      <div class="sponsor-slot">LOGO SPONSOR</div>
+      <div class="sponsor-slot">LOGO SPONSOR</div>
+      <div class="sponsor-slot">LOGO SPONSOR</div>
+      <div class="sponsor-slot">LOGO SPONSOR</div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="assets/stemma.svg" alt="" class="crest">
+          <strong>Sant'Angelo D'Acri</strong>
+        </div>
+        <p style="font-size:0.88rem;">Sito ufficiale dell'A.S.D. Sant'Angelo D'Acri — Terza Categoria, Girone B, Calabria.</p>
+        <div class="social-row">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">ig</a>
+        </div>
+      </div>
+      <div>
+        <h4>Link rapidi</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="notizie.html">Notizie</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Società</h4>
+        <ul>
+          <li><a href="squadra.html">Rosa &amp; Staff</a></li>
+          <li><a href="calendario.html">Calendario</a></li>
+          <li><a href="contatti.html">Sponsor</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contatti</h4>
+        <ul>
+          <li>Sede: da aggiornare</li>
+          <li>Tel: da aggiornare</li>
+          <li>Email: da aggiornare</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 A.S.D. Sant'Angelo D'Acri</span>
+      <span>Sito sviluppato su misura per il club</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

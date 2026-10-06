@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Stemma A.S.D. Sant'Angelo D'Acri (segnaposto)">
+  <circle cx="50" cy="50" r="48" fill="#13294b" stroke="#c9a227" stroke-width="4"/>
+  <circle cx="50" cy="50" r="38" fill="none" stroke="#c9a227" stroke-width="1.5" opacity="0.6"/>
+  <text x="50" y="60" font-family="'Barlow Condensed', Arial, sans-serif" font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle">SA</text>
+</svg>
