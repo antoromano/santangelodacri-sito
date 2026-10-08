@@ -1,7 +1,16 @@
 {
   "membri": [
-    { "nome": "Nome Cognome", "ruolo": "Allenatore" },
-    { "nome": "Nome Cognome", "ruolo": "Direttore Sportivo" },
-    { "nome": "Nome Cognome", "ruolo": "Presidente" }
+    {
+      "nome": "Marco Zanfini",
+      "ruolo": "Allenatore"
+    },
+    {
+      "nome": "Nome Cognome",
+      "ruolo": "Direttore Sportivo"
+    },
+    {
+      "nome": "Nome Cognome",
+      "ruolo": "Presidente"
+    }
   ]
 }
